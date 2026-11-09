@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FML HOW TO ALIGN TS PROPERLY AAAAAAAAAAAAAAAAAAAAA</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: Arial;
+      background-image: url('img2.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #5c3240;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+
+    .fml {
+      width: 100%;
+      max-width: 1000px;
+      height: 94vh;
+      max-height: 620px;
+      backdrop-filter: blur(4px);
+      border: 2.5px solid #754050;
+      border-radius: 20px;
+      padding: 24px 28px;
+      box-shadow: 0 10px 30px rgba(117, 64, 80, 0.15);
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      position: relative;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .hhhe {
+      font-size: 22px;
+      font-weight: 700;
+      color: #32161f;
+      margin-bottom: 12px;
+    }
+
+    .txt {
+      font-size: 11.5px;
+      line-height: 1.45;
+      color: #46232e;
+      text-align: justify;
+    }
+    .list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+      position: relative;
+    }
+
+    .unorderdsgfsdj {
+      list-style-type: none;
+      padding-left: 0;
+      font-size: 11.5px;
+      line-height: 1.45;
+      color: #46232e;
+    }
+
+    .unorderdsgfsdj li {
+      padding-left: 0;
+    }
+
+    .unorderdsgfsdj li.indent {
+      padding-left: 12px;
+    }
+
+    .neko {
+      width: 110px;
+      height: auto;
+      flex-shrink: 0;
+      margin-right: 20px;
+    }
+
+    .neko img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .FUYUKO { /* i dont play the game but ik her hejhjhe IM NOT LARPING */
+      width: 100%;
+      height: 200px;
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1.5px solid #754050;
+      margin: 10px 0;
+    }
+
+    .FUYUKO img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      position: relative;
+    }
+
+    .jiraichan {
+      width: 100%;
+      height: 110px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid #754050;
+    }
+
+    .jiraichan img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .abtme {
+      border: 2px solid #754050;
+      border-radius: 16px;
+      padding: 16px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: 280px;
+    }
+
+    .abtme-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #32161f;
+    }
+
+    .links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .links-list a {
+      font-size: 12px;
+      color: #6392d8;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+    }
+
+    .links-list a:hover {
+      text-decoration: underline;
+    }
+
+    .navi {
+      margin-top: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .nav-kaomoji {
+      font-size: 12px;
+      color: #46232e;
+    }
+
+    .button-group {
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-btn {
+      background-color: #ffffff;
+      border: 1.5px solid #754050;
+      border-radius: 12px;
+      padding: 4px 14px;
+      font-size: 11px;
+      color: #32161f;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.2s;
+    }
+
+    .nav-btn:hover {
+      background-color: #ffe4ee;
+    }
+
+    .menherachan {
+      position: absolute;
+      right: -15px;
+      bottom: -15px;
+      width: 85px;
+      height: auto;
+      pointer-events: none;
+      z-index: 5;
+    }
+
+    .menherachan img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .bear {
+      width: 100%;
+      height: 130px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1.5px solid #754050;
+    }
+
+    .bear img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(92, 50, 64, 0.4);
+      backdrop-filter: blur(5px);
+      z-index: 1000;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-overlay.active {
+      display: flex; /* ts i hav to stay up nd seek help js for me to finish this jvjkhvhffhb I FCKING FORGOT AAAA*/
+    }
+
+    .modalshii {
+      width: 90%;
+      max-width: 650px;
+      height: 80vh;
+      background: #fff;
+      border: 2.5px solid #754050;
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(117, 64, 80, 0.25);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .close-modal { /*fooking help ts is fcking me up */
+      position: absolute;
+      top: 10px;
+      right: 12px; 
+      background: #ffe4ee;
+      border: 1.5px solid #754050;
+      border-radius: 50%;
+      width: 26px;
+      height: 26px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #5c3240;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: background-color 0.2s;
+    }
+
+    .close-modal:hover {
+      background-color: #fbc4d8;
+    }
+
+    .modal-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fml">
+
+    <div class="left">
+      <div>
+        <h1 class="hhhe">Winny A. Verzosa</h1>
+        <p class="txt">
+          Hiii! I'm Winny A. Verzosa from Quezon City, Philippines ☆⌒(ゝ。∂). I live in Project 4, QC and currently a senior high student under the Information and Communication Technology (ICT) strand at Quirino High School. I completed my elementary level at Project 3 Elementary School and finished my junior high school at Quirino High School. I spend my free time engaging in personal interests such as:
+        </p>
+
+        <div class="list">
+          <ul class="unorderdsgfsdj">
+            <li>Playing video games</li>
+            <li>Reading random stuff</li>
+            <li>Watching anime</li>
+            <li>Exploring the internet</li>
+            <li class="indent">and listening to music</li>
+          </ul>
+
+          <div class="neko">
+            <img src="IMG5.png" />
+          </div>
+        </div>
+
+        <p class="txt">
+          I also enjoy going out when it rains, as I find peace and comfort in that atmosphere.
+        </p>
+      </div>
+
+      <div class="FUYUKO">
+        <img src="IMG1.gif" />
+      </div>
+
+      <p class="txt">
+        I am not really sure about my skills but I am quite good at the games I play, and compared to how I was before, I can easily adapt at almost everything, I am also good at tackling stuff (⸝⸝⸝╸w╺⸝⸝⸝)
+      </p>
+    </div>
+
+    <div class="right">
+
+      <div class="jiraichan">
+        <img src="IMG3.webp" />
+      </div>
+	  
+      <div class="abtme">
+        <div class="abtme-title">More about me! ૮꒰ ˶• ༝ •˶꒱ა ♡</div>
+
+        <div class="links-list">
+          <a href="https://www.facebook.com/mallowinnyy" target="_blank">↳ facebook</a>
+          <a href="https://www.roblox.com/users/3576790484/profile" target="_blank">↳ roblox</a>
+          <a href="https://mellowgorenyan.github.io/portfolio-website/" target="_blank">↳ ˗ˏˋ ꒰ ✉︎ ꒱ ˎˊ˗</a>
+        </div>
+
+        <div class="navi">
+          <div class="nav-kaomoji">૮꒰˶  - ˕ -꒱ა</div>
+          <div class="button-group">
+            <button type="button" class="nav-btn" id="openDokuroBtn">♡♡♡</button>
+            <button type="button" class="nav-btn">.ᐟ.ᐟ</button>
+            <button type="button" class="nav-btn">.⋆♱</button>
+          </div>
+        </div>
+
+        <div class="menherachan">
+          <img src="IMG6.gif" />
+        </div>
+      </div>
+
+      <div class="bear">
+        <img src="IMG02.gif" />
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="dokuroModal" class="modal-overlay">
+    <div class="modalshii">
+      <button type="button" class="close-modal" id="closeDokuroBtn">&times;</button>
+      <iframe src="dokuro.html" class="modal-iframe"></iframe>
+    </div>
+  </div>
+
+  <script>
+    const openBtn = document.getElementById('openDokuroBtn');
+    const closeBtn = document.getElementById('closeDokuroBtn');
+    const modal = document.getElementById('dokuroModal');
+
+    openBtn.addEventListener('click', () => {
+      modal.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>

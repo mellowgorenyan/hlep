@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dokurochan</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(243, 202, 222);
+            background-image: url('heart.gif');
+            background-repeat: no-repeat;
+			background-size: cover;
+		
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card {
+            background-image: rgb(253, 245, 249);
+            max-width: 800px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .pirupi {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>~(=^‥^)ノ~</h1>
+        <div class="pirupi">
+            <video controls autoplay loop muted>
+                <source src="dokurochan.mp4" type="video/mp4">
+                <source src="dokurochan" type="video/mp4">
+                
+            </video>
+        </div>
+    </div>
+
+</body>
+</html>
